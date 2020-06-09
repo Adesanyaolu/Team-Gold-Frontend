@@ -12,24 +12,47 @@ body, html {
                 width: 100%;
                 top: 27.8%;
                 height: 70%;
-
-    }
+}
+/* The placeholding play button */
+    .center-icon{
+        position: absolute;
+         width: 50px;
+         top: 50%;
+         left: 50%;
+         -webkit-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         text-align: center;
+     }
+     .center-icon .fa{
+       font-size: 50px;
+       padding: 20px;
+       border-radius: 50%;
+     }
+     .center-icon a .fa{
+       background-color: rgba(255, 255, 255, 0.85);
+     }
+/* The small image */
 .content > img {  padding-top: 30px;
                     margin: 5px;
                     top: 27.8%;      
                     align: right;
                     padding-left: 30px;
+                    width: 90%;
             }
-
+/* The Text */
 #text       {   position: normal;
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 11px;
-                line-height: 13px;
+                font-size: 15px;
+                line-height: 18px;
                 text-align: justify;
                 padding-left: 20px;
 }
+#text > h3 {
+    color: #021764;
+}
+
 .flex-container {
                 display: flex;
                 flex-direction: row;  
@@ -39,17 +62,45 @@ body, html {
                 width: auto;   }
 /* Display for mobile */
 @media  (max-width: 320px) {
-                    body,html {
-                            background-color: red;
-                        }
                     .content > img {
                        display: none;
                     }    
+                    .center-icon{
+                        position: absolute;
+                         width: 50px;
+                         top: 20%;
+                         left: 50%;
+                         -webkit-transform: translate(-40%, -40%);
+                         transform: translate(-40%, -40%);
+                         text-align: center;
+                     }
+                     .center-icon .fa{
+                       font-size: 30px;
+                       padding: 20px;
+                       border-radius: 50%;
+                     }
+                     .center-icon a .fa{
+                       background-color: rgba(255, 255, 255, 0.85);
+                     }
                 }
 /*Display for Tablet and mini-screen devices*/
 @media only screen and (min-width: 321px) and (max-width:767px) {
-                    body,html {
-                                background-color:green;
-                                }
                     .content > img { display: none;
                     }
+                    .center-icon{
+                        position: absolute;
+                         width: 50px;
+                         top: 20%;
+                         left: 50%;
+                         -webkit-transform: translate(-40%, -40%);
+                         transform: translate(-40%, -40%);
+                         text-align: center;
+                     }
+                     .center-icon .fa{
+                       font-size: 30px;
+                       padding: 20px;
+                       border-radius: 50%;
+                     }
+                     .center-icon a .fa{
+                       background-color: rgba(255, 255, 255, 0.85);
+                     }
